@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>Image_play</title>
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" ></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1><em>Convert to Gray Scale image</em></h1>
+ <canvas id="can1"></canvas>
+  <br>
+  <input type="file" id="id2" multiple="false" accept="image/*"
+         onchange="doupload()"><br><br>
+  
+ <input type="button" id="id3" 
+        value="convert" onclick="dochange()">
+  <br><hr>
+  <h1><em>Change Background</em></h1>
+  <h3>(The white background of first image gets changed)</h3>
+  <canvas id="can2"></canvas> 
+  <canvas id="can3"></canvas>
+  <canvas id="can4"></canvas>
+  <br>
+  <span>pic1:</span>
+  <input type="file" multiple="false" accept="image/*" id="id4" onchange="doupload2()"><br><br>
+  <span>pic2:</span>
+  <input type="file" multiple="false" accept="image/*" id="id5" onchange="doupload3()"><br><br>
+  <input type="button" value="change_background" id="id6" onclick="bgchange()"><hr>
+  <h1><em>Keep in Prison</em></h1>
+  <canvas id="can5"></canvas><br>
+  <input type="file" multiple="false" accept="image/*" id="id7"
+         onchange="doupload4()"><br><br>
+  <input type="button" id="id8" value="prison" onclick="doprison()"><hr>
+  <h1><em>Blur Image</em></h1>
+  <canvas id="can6"></canvas><br>
+  <input type="file" multiple="false" accept="image/*" id="id9" onchange="doupload5()"><br><br>
+  <input type="button" value="blur" id="id10" onclick="doblur()"><br><br>
+  <hr>
+  <h1><em>Encode Image</em></h1>
+  <input type="text" placeholder="Enter ur text to encode" id="id16" required=""><br><br>
+  <canvas id="can8"></canvas><br><br>
+  <input type="file" accept="image/*" multiple="false" id="id15" onchange="doupload7()"><br><br>
+    <input type="button" value="encode" id="id17"
+           onclick="doencode()"><p id="19">Encoded Image</p>
+  <canvas id="can9"></canvas>
+ 
+    <hr>
+    <h1><em>Decode Image</em></h1>
+    <canvas id="can7"></canvas>
+    <div id="id13" style="display:inline-block">
+      Decoded Text:
+      <div id="id14"></div> 
+    </div>
+    <br>
+    <input type="file" accept="image/*" multiple="false" id="id11" onchange="doupload6()"><br><br>
+    <input type="button" value="decode" id="id12"
+           onclick="dodecode()"><hr>
+    
+</body>
+
+</html>

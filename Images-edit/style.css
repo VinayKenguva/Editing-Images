@@ -1,0 +1,29 @@
+#can1{
+  display:block;
+  width:250px;
+  height:150px;
+  background-color:gray;
+}
+
+#id2,#id5,#id4{
+}
+
+#can2,#can3,#can4,#can5,#can6,#can7,#can8,#can9{
+  width:250px;
+  height:150px;
+  background-color:gray;
+  margin-right:15px;
+}
+hr{
+  height:3px;
+  background-color:black;
+}
+body{
+  background-image : url("https://bit.ly/3dNyB0k");
+}
+#id13{
+  position:relative;
+  padding-left:30px;
+  bottom:70px;
+  font-size:27px;
+}
